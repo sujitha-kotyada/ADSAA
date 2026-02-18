@@ -1,4 +1,4 @@
-/BFT of a graph using adjacency list representation
+//BFT of a graph using adjacency list representation
 import java.util.*;
 
 public class BFT_AdjList {
@@ -14,13 +14,11 @@ public class BFT_AdjList {
         		}
     	}
 
-    	// Add edge (undirected graph)
     	void addEdge(int u, int v) {
         		adjList[u].add(v);
         		adjList[v].add(u);
     	}
 
-    	// Breadth First Traversal
     	void bft(int startVertex) {
         		boolean[] visited = new boolean[n];
         		Queue<Integer> queue = new LinkedList<>();
