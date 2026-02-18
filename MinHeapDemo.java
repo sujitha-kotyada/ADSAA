@@ -1,4 +1,4 @@
-/ Java Program that implements MinHeap using Arrays
+// Java Program that implements MinHeap using Arrays
 import java.util.Scanner;
 
 class MinHeap {
@@ -8,7 +8,7 @@ class MinHeap {
 
     	public MinHeap(int capacity) {
         		this.capacity = capacity;
-        		a = new int[capacity + 1];   // 1-based indexing
+        		a = new int[capacity + 1];  
         		size = 0;
     	}
 
@@ -39,7 +39,6 @@ class MinHeap {
         		return min;
     	}
 
-    	// DOWNHEAP procedure
     	void adjust(int i) {
         		int j = 2 * i;
         		int item = a[i];
@@ -62,8 +61,6 @@ class MinHeap {
         		else
             			return a[1];
     	}
-
-    	// Display heap elements (level order)
     	public void display() {
         		for (int i = 1; i <= size; i++) {
             			System.out.print(a[i] + " ");
