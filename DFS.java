@@ -32,6 +32,15 @@ class DFS{
 			int e=sc.nextInt();
 			System.out.println("Enter edges (u,v) :");
 			for(int i=0;i<e;i++){
+			    int u=sc.nextInt();
+			    int v=sc.nextInt();
+			    graph.addEdge(u,v);
 			}
+			System.out.print("Enter starting vertex:");
+			int start=sc.nextInt();
+			System.out.println("Depth First Traversal:");
+			graph.dfs(start);
+			sc.close();
 	}
+}
 			
